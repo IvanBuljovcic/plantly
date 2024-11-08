@@ -10,8 +10,6 @@ const PlantlyImage = ({ size, imageUri }: PlantlyImageProps) => {
 
   const imageSize = size || Math.min(width / 1.5, 400);
 
-  console.log("imageUri: ", imageUri);
-
   const imageSource = imageUri
     ? { uri: imageUri }
     : require("@/assets/plantly.png");
